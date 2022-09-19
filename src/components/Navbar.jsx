@@ -1,23 +1,49 @@
+import PropTypes from "prop-types";
+import Input from "./Input";
+import Button from "./Button";
+import { useState } from "react";
+
 let styles = {
-    background: "bg-red-500", 
-    text: "text-yellow-600",
-    all: [{
-        test1: "1",
-        test2: "2"
-    }]
+  nav: "bg-red-500 uppercase text-center",
+  ul: "flex flex-row",
+  h1: "bg-green-500 text-blue uppercase",
+  h2: "bg-red-500 text-white uppercase",
 };
 
+// let loading = true;
 const Navbar = () => {
+  const [showLoading, setShowLoading] = useState(false);
   return (
-    <nav className={styles.background && styles.text}>
-        <ul>
-            <li>
-                <a href="#">rendome</a>
-            </li>
-        </ul>
-    </nav>
+    <div>
+      <Input
+        id="number"
+        classname="text-red-500"
+        value="number"
+        placeholder="number"
+        npm
+        run
+        start
+        type="number"
+      />
+      <Input />
+      <Button
+        type="button"
+        id="submit"
+        value="Envoyer"
+        onClick={() => setShowLoading(true)}
+      />
+      {showLoading ? (
+        <>
+          <h1 className={styles.h1}>hello world</h1>
+        </>
+      ) : (
+        <>
+          <h2 className={styles.h2}>hello acs</h2>
+        </>
+      )}
+    </div>
   );
 };
 
-export default Navbar;
 
+export default Navbar;

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import Home from "./pages/home/index";
 import Navbar from "./components/Navbar";
-
+import "./pages/home/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
