@@ -1,0 +1,36 @@
+{
+    "title": "ceci est un titre",
+    "desc": "lorem",
+    "cars": [
+        {
+            "_id": 0,
+            "mark": "peugeot",
+            "color": "red",
+            "price": "50000"
+        },
+        {
+            "_id": 1,
+            "mark": "bmw",
+            "color": "yellow",
+            "price": "80000"
+        },
+        {
+            "_id": 2,
+            "mark": "ford",
+            "color": "blue",
+            "price": "90000"
+        }, 
+        {
+            "_id": 3,
+            "mark": "mercedes",
+            "color": "brown",
+            "price": "90000"
+        }, 
+        {
+            "_id": 4,
+            "mark": "tesla",
+            "color": "green",
+            "price": "90000"
+        }
+    ]
+}
